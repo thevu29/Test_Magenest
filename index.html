@@ -75,11 +75,11 @@
             h5.innerHTML = 'Phương trình vô nghiệm'
         } else if (delta === 0) {
             const x = -b / (2 * a)
-            h5.innerHTML = `Phương trình có nghiệm kép x = ${x.toFixed(2)}`
+            h5.innerHTML = `Phương trình có nghiệm kép x = ${parseFloat(x.toFixed(2))}`
         } else {
             const x1 = (-b + Math.sqrt(delta)) / (2 * a)
             const x2 = (-b - Math.sqrt(delta)) / (2 * a)
-            h5.innerHTML = `Phương trình có 2 nghiệm phân biệt x1 = ${x1.toFixed(2)} và x2 = ${x2.toFixed(2)}`
+            h5.innerHTML = `Phương trình có 2 nghiệm phân biệt x1 = ${parseFloat(x1.toFixed(2))} và x2 = ${parseFloat(x2.toFixed(2))}`
         }
     })
 </script>
